@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>LaCafeChampagne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body">
+    <div class="video-block">
+        <div class="video-block__position"></div>
+        <button class="button button__slide button__close">Закрыть</button>
+    </div>
+    <div class="container-wrap">
+        <div class="container">
+            <input id="toggle" type="checkbox">
+            <label class="toggle-container" for="toggle">
+                <span class="button button-toggle"></span>
+            </label>
+            <div class="close-box"></div>
+            <nav class="nav slide-animation">
+                <a class="nav-item link" href="#top">Главная</a>
+                <a class="nav-item link" href="#info">О ресторане</a>
+                <a class="nav-item link" href="#foodmenu">Меню</a>
+                <a class="nav-item link" href="#gallery">Галерея</a>
+                <a class="nav-item link" href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </div>
+    <div class="reservation-position inactive">
+        <div class="reservation-box">
+            <div class="figure">
+                <span class="figure__circle"></span>
+                <span class="figure__line"></span>
+            <span class="figure__icon"></span>
+                <span class="figure__line"></span>
+                <span class="figure__circle"></span>
+            </div>
+            <h2 class="headline">Забронировать столик</h2>
+            <form class="reservation-form" id="form1" name="form">
+                <input type="text" name="name" class="input" placeholder="Имя"></input>
+                <input type="text" name="phone" class="input" placeholder="Телефон"></input>
+                <span class="input-button__frame "><input type="submit"  class="input-button " value="Забронировать"></input></span>
+            </form>
+        </div>
+    </div>
+    <div class="overlay js-overlay-thank-you">
+        <div class="popup js-thank-you">
+            <h2 class="popup__text">Спасибо за заявку</h2>
+            <div class="close-popup js-close-thank-you"></div>
+        </div>
+    </div>
+    <header class="header" id="top">
+        <div class="interaction-block page__inner">
+            <a href="/" class="link"><img src="img/white_logo.png" alt="Logo" class="logo inactive-mobile"></a>
+            <div class="menu-wrap">
+                <ul class="menu slide-animation" >
+                    <li class="menu__item">
+                        <a href="#top" class="link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#info" class="link">О ресторане</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#foodmenu" class="link">Меню</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#gallery" class="link">Галерея</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contacts" class="link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="reservation">
+                <div><a href="tel:+79855572234" class="link tel">+7 985 557 22 34</a></div>
+                <button class="reservation__button button">Заказать столик</button>
+            </div>
+        </div>
+        <div class="header-content page__inner">
+            <img src="img/brown_logo.png" alt="logo" class="header-content__logo">
+            <p class="header-content__title">Ресторан европейской<br> и кавказcкой кухни</p>
+            <div class="play-block">
+                <span class="play-block__dots"></span>
+                <span class="play-link"></span>
+                <p class="play-block__text">видео-презентация <br>зала ресторана</p>
+            </div>
+        </div>
+        <span class="header-bootom__pic"></span>
+    </header>
+    <div class="service-info" id="info">
+        <div class="page__inner">
+                <div class="service-info__wrapper">
+                    <div class="figure">
+                    <span class="figure__circle"></span>
+                    <span class="figure__line"></span>
+                    <span class="figure__icon"></span>
+                    <span class="figure__line"></span>
+                    <span class="figure__circle"></span>
+                </div>
+                <h2 class="headline">Ресторан «Champagne»</h2>
+                <p class="service-info__text">приглашает насладиться европейской и кавказской кухней. В меню присутствуют потрясающе вкусные блюда из мяса, птицы и рыбы. Также особое внимание уделено собственной кулинарной выпечке, состоящей из итальянских ингредиентов. Приятная атмосфера, дружелюбный персонал, демократичные цены — здесь одинаково хорошо провести время как для деловой встречи, так и для душевного вечера в компании друзей и близких.</p>
+                </div>
+            <div class="sirvice-block">
+                <p class="sirvice-block__title">Также <span class="sirvice-block__title sirvice-block__title_clr_brown">ресторан «Champagne»</span> предлагает нашим уважаемым гостям:</p>
+                <div class="sirvice-block__wrapper">
+                    <div class="sirvice-block__item">
+                        <div class="sirvice-block__icon-wrap">
+                            <img src="img/icon_table.png" alt="icon" class="sirvice-block__icon">
+                        </div>
+                        <p class="sirvice-block__text">бронированние столов для двух и более человек</p>
+                    </div>
+                    <div class="sirvice-block__item">
+                        <div class="sirvice-block__icon-wrap">
+                            <img src="img/icon_fireworks.png" alt="icon" class="sirvice-block__icon">
+                        </div>
+                        <p class="sirvice-block__text">проведение банкетов  и праздничных мероприятий</p>
+                    </div>
+                    <div class="sirvice-block__item">
+                        <div class="sirvice-block__icon-wrap">
+                            <img src="img/icon_karaoke.png"" alt="icon" class="sirvice-block__icon">
+                        </div>
+                        <p class="sirvice-block__text">караоке-бар</p>
+                    </div>
+                    <div class="sirvice-block__item">
+                        <div class="sirvice-block__icon-wrap">
+                            <img src="img/icon_hookah.png"" alt="icon" class="sirvice-block__icon">
+                        </div>
+                        <p class="sirvice-block__text">заказ кальяна</p>
+                    </div>
+                    <div class="sirvice-block__item">
+                        <div class="sirvice-block__icon-wrap">
+                            <img src="img/icon_service.png"" alt="icon" class="sirvice-block__icon">
+                        </div>
+                        <p class="sirvice-block__text">прочие необходимые услуги по договоренности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food-menu" id="foodmenu">
+        <div class="page__inner">
+            <div class="figure">
+                <span class="figure__circle"></span>
+                <span class="figure__line"></span>
+                <span class="figure__icon"></span>
+                <span class="figure__line"></span>
+                <span class="figure__circle"></span>
+            </div>
+            <h2 class="headline">Меню</h2>
+            <div class="food-menu__container">
+                <div class="food-menu__item food-menu__item_bkg_1">
+                    <a href="" class="link food-menu__link click_item-1">
+                        <span class="food-menu__frame"><p class="food-menu__name">Посмотреть меню</p></span>
+                        </a>
+                </div>
+                <div class="food-menu__item food-menu__item_bkg_2">
+                    <a href="#" class="link food-menu__link click_item-2">
+                        <span class="food-menu__frame"><p class="food-menu__name">Супы</p></span>
+                    </a>
+                </div>
+                <div class="food-menu__item food-menu__item_bkg_3">
+                    <a href="" class="link food-menu__link click_item-3">
+                        <span class="food-menu__frame"><p class="food-menu__name">завтраки</p></span>
+                    </a>
+                </div>
+                <div class="food-menu__item food-menu__item_bkg_4">
+                    <a href="" class="link food-menu__link click_item-4">
+                        <span class="food-menu__frame"><p class="food-menu__name">Горячие блюда</p></span>
+                    </a>
+                </div>
+                <div class="food-menu__item food-menu__item_bkg_5">
+                    <a href="" class="link food-menu__link click_item-5">
+                        <span class="food-menu__frame"><p class="food-menu__name">Напитки</p></span>
+                    </a>
+                </div>
+                <div class="food-menu__item food-menu__item_bkg_6">
+                    <a href="" class="link food-menu__link click_item-6">
+                        <span class="food-menu__frame"><p class="food-menu__name">Кавказкое меню</p></span>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery-block" id="gallery">
+                <div class="gallery-block__item">
+                    <div class="figure">
+                    <span class="figure__circle"></span>
+                    <span class="figure__line"></span>
+                    <span class="figure__icon"></span>
+                    <span class="figure__line"></span>
+                    <span class="figure__circle"></span>
+                    </div>
+                    <h2 class="headline">Галерея</h2>
+                    <p class="gallery-block__text">Одна из особенностей нашего ресторана - это кондитерские изделия собственного приготовления на основе итальянских ингредиентов.</p>
+                </div>
+                <div class="gallery">
+                    <div class="gallery__wrap">
+                        <img class="gallery__img-arrow" id="gallery-left-arrow"src = "img/arrow1.png"/> 
+                        <div class="gallery__img-wrap gallery__img">
+                            <img class="gallery__img" src = "img/1.jpg" id = "gallery-image" > </img>
+                        </div>
+                        <img class="gallery__img-arrow" id="gallery-right-arrow" src = "img/arrow2.png" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food-gallery">
+        <div class="food-gallery__wrap page__inner"><img src="" alt="menu image" class="food-gallery__img"></div>
+        <div class="food-gallery__nav page__inner">
+            <button class="button button__slide food-gallery__left-arrow"><<<</button>
+            <button class="button  button__slide button__close">Закрыть</button>
+            <button class="button button__slide food-gallery__right-arrow">>>></button>
+        </div>
+    </div>
+    <div class="reservation-block">
+        <div class="reservation-block__position page__inner">
+            <div class="reservation-box reservation-box_theme_dark">
+                <div class="figure "">
+                    <span class="figure__circle figure__circle_theme_dark"></span>
+                    <span class="figure__line figure__line_theme_dark"></span>
+                    <span class="figure__icon figure__icon_theme_dark"></span>
+                    <span class="figure__line figure__line_theme_dark"></span>
+                    <span class="figure__circle figure__circle_theme_dark"></span>
+                </div>
+                <h2 class="headline headline_theme_dark">Забронировать столик</h2>
+                <form class="reservation-form" id="form2" name="form2">
+                    <input type="text" name="name" class="input input_theme_dark" placeholder="Имя"></input>
+                    <input type="text" name="phone" class="input input_theme_dark" placeholder="Телефон"></input>
+                    <span class="input-button__frame input-button__frame_theme_dark"><input type="submit"  class="input-button input-button_theme_dark" value="Забронировать"></input></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contacts page__inner" id="contacts">
+        <div class="contacts__item">
+            <div class="figure">
+                <span class="figure__circle"></span>
+                <span class="figure__line"></span>
+                <span class="figure__icon"></span>
+                <span class="figure__line"></span>
+                <span class="figure__circle"></span>
+            </div>
+            <h2 class="headline">Контакты</h2>
+            <p class="contacts__title"><img src="img/icon_pin.png" alt="icon" class="contacts__icon">Наш адрес</p>
+            <p class="contacts__text">г.Москва, ул.Профсоюзная 64 к.2, комплекс дирижабль</p>
+            <p class="contacts__title"><img src="img/phone icon.png" alt="icon" class="contacts__icon">Номер телефона</p>
+            <p class="contacts__text"><a href="tel:+79855572234" class="link contacts__link">+7 985 557 22 34</a></p>
+            <p class="contacts__title"><img src="img/icon_mail.png" alt="icon" class="contacts__icon">Наша почта</p>
+            <p class="contacts__text"><a href="mailto:lacafechampagne@mail.ru" class="link contacts__link">lacafechampagne@mail.ru</a></p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d562.5898152072938!2d37.54815903918264!3d55.66535258826707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d1ca99f6281%3A0x37f8c5d7121144a0!2sLa+Cafe+Champagne!5e0!3m2!1sru!2sby!4v1551774702690" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <footer class="footer">
+        <div class="interaction-block page__inner">
+            <a href="/" class="link"><img src="img/white_logo.png" alt="Logo" class="logo inactive-mobile"></a>
+            <div class="reservation">
+                <div><a href="tel:+79855572234" class="link tel">+7 985 557 22 34</a></div>
+                <button class="reservation__button button">Заказать столик</button>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+</body>
+</html>
